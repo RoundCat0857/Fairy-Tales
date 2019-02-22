@@ -5,8 +5,8 @@
 ### プロジェクトの開始
 
 1. `git clone`
-1. Unityでクローンしたディレクトリを開く
-
+2. Unityでクローンしたディレクトリを開く
+手順Open→フォルダ選択
 
 ### フォルダ構成
 - Assets以下に関して
@@ -20,3 +20,5 @@
     - Program  
       基本的に`Program/<SceneName>/`に各シーン毎に使用するMaterials, Scripts, Prefab などを管理します  
       なのでシーンは`Program/<SceneName>/SceneName.unity`に置き、`Program/<Scene Name>/Materials`や`Program/<Scene Name>/Scripts`内のファイルを編集することになります
+
+  構造がわかりやすくなるようにdummyファイルを足してあります。中身ができたら要らないDummyファイルは各自消してからpushしてください。
