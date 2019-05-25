@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Project/Program/Title/Title.unity
+    guid: 9a16900444a9de24f8a92103cfe55662
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Kanako_Room.unity
+    guid: daab504db85691d40af45f8de1cf0472
   m_configObjects: {}
