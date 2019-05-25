@@ -2,21 +2,28 @@ using UnityEngine;
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
+  public GameObject targetObj;
+  Vector3 targetPos;
 
-    public GameObject player;       //プレイヤーゲームオブジェクトへの参照を格納する Public 変数
-    private Vector3 offset;         //プレイヤーとカメラ間のオフセット距離を格納する Public 変数
+  void Start () {
+      // targetObj = GameObject.Find("TargetGameObject");
+      targetPos = targetObj.transform.position;
+  }
 
-    // イニシャライゼーションに使用ます。
-    void Start ()
-    {
-        //プレイヤーとカメラ間の距離を取得してそのオフセット値を計算し、格納します。
-        offset = transform.position - player.transform.position;
-    }
+  void Update() {
+      // targetの移動量分、自分（カメラ）も移動する
+      transform.position += targetObj.transform.position - targetPos;
+      targetPos = targetObj.transform.position;
 
-    // 各フレームで、Update の後に LateUpdate が呼び出されます。
-    void LateUpdate ()
-    {
-        //カメラの transform 位置をプレイヤーのものと等しく設定します。ただし、計算されたオフセット距離によるずれも加えます。
-        transform.position = player.transform.position + offset;
-    }
+      // マウスの右クリックを押している間
+      if (Input.GetMouseButton(0)) {
+          // マウスの移動量
+          float mouseInputX = Input.GetAxis("Mouse X");
+          float mouseInputY = Input.GetAxis("Mouse Y");
+          // targetの位置のY軸を中心に、回転（公転）する
+          transform.RotateAround(targetPos, Vector3.up, mouseInputX * Time.deltaTime * 200f);
+          // カメラの垂直移動（※角度制限なし、必要が無ければコメントアウト）
+          // transform.RotateAround(targetPos, transform.right, mouseInputY * Time.deltaTime * 200f);
+      }
+  }
 }
