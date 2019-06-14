@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Program/RealWorld/Kanako_Room.unity
     guid: daab504db85691d40af45f8de1cf0472
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Corridor.unity
+    guid: 998cd753433c67c44a92bc2c085e7a25
   m_configObjects: {}
