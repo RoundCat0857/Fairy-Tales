@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Program/RealWorld/Kanako_Room.unity
     guid: daab504db85691d40af45f8de1cf0472
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Corridor.unity
+    guid: 998cd753433c67c44a92bc2c085e7a25
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Fother_Room.unity
+    guid: 9dc939cabb2e640428d3a5a48cb39288
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Archive.unity
+    guid: 8d604e7d99274c74c97c6660045e527f
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/Living.unity
+    guid: c0f39854968594742bcd83c9ba53f2cf
+  - enabled: 1
+    path: Assets/Project/Program/RealWorld/RW_Town.unity
+    guid: 18637512676e33941b669cff42d9fece
   m_configObjects: {}
