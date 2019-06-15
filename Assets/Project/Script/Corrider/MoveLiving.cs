@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class MoveLiving : MonoBehaviour
 {
 
-    void OnTriggerExit()
+    void OnCollisionEnter()
     {
       SceneManager.LoadScene ("Living");
     }
