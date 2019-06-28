@@ -666,6 +666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: charcter_samplemodling03
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: c891a7f9de10f4b95b8e4a9916582193, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: c891a7f9de10f4b95b8e4a9916582193, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.222
